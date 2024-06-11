@@ -1,3 +1,4 @@
+import { MovieType } from './../types/movie';
 import { useInfiniteQuery } from '@tanstack/react-query';
 import { fetchMovies } from '@/api';
 
@@ -13,7 +14,7 @@ const useMovies = () => {
     },
   });
 
-  const movies = data?.pages.map((page) => page).flat() ?? [];
+  const movies = (data?.pages.map((page) => page.results).flat() as MovieType[]) ?? [];
 
   return {
     movies,
