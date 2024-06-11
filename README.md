@@ -9,6 +9,6 @@
 
 ### step 2. 인기 영화 get 요청 - useMovies 훅 만들고 테스트 코드 생성
 
-- [ ] useMovies.test.ts - 예상하는 동작에 대한 실패하는 테스트 명세 만들기
+- [x] useMovies.test.ts - 예상하는 동작에 대한 실패하는 테스트 명세 만들기
 - [ ] 해당 동작을 하는 useMovies 훅 만들기
 - [ ] 테스트 통과 하는지 보기
